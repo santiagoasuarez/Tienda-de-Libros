@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/background\ 2.jpg);
+}
+
+header {
+  background-color: darkgrey;
+  grid-area: header;
+}
+
+h1 {
+  background-color: darkgrey;
+  color: firebrick;
+}
+
+.navbar {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  max-width: 1080px;
+  height: 10vh;
+  justify-content: space-between;
+}
+
+.navbar .menu {
+  list-style: none;
+  background-color: darkgrey;
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 15% 35% 35% 15%;
+  grid-template-areas:
+    "header header header"
+    "main main main "
+    "main main main"
+    "footer footer footer";
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+}
+.section__one {
+  display: flex;
+}
+
+.section__two {
+  display: flex;
+}
+
+.imagen {
+  height: 300px;
+  width: 300px;
+  border: 5px darkblue inset;
+  display: inline-block;
+}
+
+p {
+  font-size: medium;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: darkslategrey;
+}
+
+footer {
+  font-size: small;
+  font-weight: 300;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: darkslateblue;
+  display: inline-block;
+  grid-area: footer;
+}
+
+@media screen and (max-width: 576px) {
+  #grilla {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 900px 75px;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+  .section__one,
+  .section__two {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    margin: 5px;
+  }
+
+  img {
+    margin: 20px;
+  }
+
+  p {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  footer {
+    margin: 10px;
+    list-style: none;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 5px;
+  }
+}
