@@ -5,62 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tienda de Libros</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/CSS/index.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
   <body>
-    <div id="grilla">
+    
+    <div class="row">
       <header>
         <nav class="navbar">
-          <h1>Tienda de Libros</h1>
-
+          <h1 class="animate__animated animate__swing">Tienda de Libros</h1>
+          
           <ul class="menu">
             <li class="boton__menu">
-              <a href="../index.html">Inicio</a>
+              <a class="btn btn-light" href="../index.html">Inicio</a>
             </li>
             <li class="boton__menu">
-              <a href="./assets/views/catalogo.html">Catálogo</a>
+              <a class="btn btn-light" href="./assets/views/catalogo.html">Catálogo</a>
             </li>
             <li class="boton__menu">
-              <a href="./assets/views/nosotros.html">Nosotros</a>
+              <a class="btn btn-light" href="./assets/views/nosotros.html">Nosotros</a>
             </li>
             <li class="boton__menu">
-              <a href="./assets/views/contacto.html">Contacto</a>
+              <a class="btn btn-light" href="./assets/views/contacto.html">Contacto</a>
             </li>
             <li class="boton__menu">
-              <a href="./assets/views/ubicacion.html">Ubicación</a>
+              <a class="btn btn-light" href="./assets/views/ubicacion.html">Ubicación</a>
             </li>
           </ul>
         </nav>
       </header>
+    </div>
+    
       <main>
-        <section class="section__one">
-          <img class="imagen" src="./assets/img/Libros 1.jpg" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
-            exercitationem ratione rerum aut quasi quo vitae ex suscipit
-            voluptate, tenetur perspiciatis. Aliquam commodi cumque, modi
-            eveniet reprehenderit necessitatibus. Vitae, pariatur.
-          </p>
-        </section>
+        <div class="container">
+          <div class="row">
+            <div class="col box-modeling">
+              <img class=" img-rounded imagen__uno" src="./assets/img/Librería 1.jpg" />
+            </div>
+            <div class="col">
+              <p class="text-center flex">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolorum exercitationem ratione rerum aut quasi quo vitae ex
+                suscipit voluptate, tenetur perspiciatis. Aliquam commodi
+                cumque, modi eveniet reprehenderit necessitatibus. Vitae,
+                pariatur.
+              </p>
+            </div>
+          </div>
 
-        <section class="section__two">
-          <img class="imagen" src="./assets/img/libros 2.jfif" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam animi
-            corporis aliquam sapiente sit voluptate, eius in, voluptatum modi,
-            nam fugiat quisquam excepturi quasi nobis eligendi tempora molestiae
-            dicta consequatur?
-          </p>
-        </section>
+          <div class="row">
+            <div class="col box-modeling">
+              <img class=" img-rounded imagen__dos" src="./assets/img/Librería 2.jpg" />
+            </div>
+            <div class="col">
+              <p class="text-center flex">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                animi corporis aliquam sapiente sit voluptate, eius in,
+                voluptatum modi, nam fugiat quisquam excepturi quasi nobis
+                eligendi tempora molestiae dicta consequatur?
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
-
+<div class="row">
       <footer>
+        <div class="col">
         <ul>
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>Twitter</li>
+          <div><li>Facebook</li></div>
+          <div><li>Instagram</li></div>
+          <div><li>Twitter</li></div>
         </ul>
+      </div>
       </footer>
     </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
