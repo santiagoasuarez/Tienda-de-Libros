@@ -5,35 +5,24 @@
 }
 
 body {
-  background-image: url(../img/background\ 2.jpg);
-}
-#grilla {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 20% 60% 20%;
-  grid-template-areas:
-    "header header header"
-    "section__one section__two section__two"
-    "footer footer footer";
-  row-gap: 10px;
+  background-color: #86bbd8;
+  max-width: auto;
 }
 
-header {
-  background-color: grey;
-  grid-area: header;
-}
+
+
 .navbar {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  max-width: 1080px;
+  max-width: auto;
   height: 10vh;
   justify-content: space-between;
+  background-color: #33658a;
 }
 
 .navbar .menu {
   list-style: none;
-  background-color: darkgrey;
   display: flex;
   gap: 20px;
 }
@@ -47,22 +36,19 @@ a {
 h2 {
   font-size: large;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: darkcyan;
-}
-
-.section__one {
-  grid-area: section__one;
-}
-
-.section__two {
-  grid-area: section__two;
+  background-color: #33658a;
+  margin-bottom: 0px;
 }
 
 .categorias {
   font-size: medium;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: darkturquoise;
+  background-color: #33658a;
+  display: flex;
   flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  
 }
 
 img {
@@ -70,16 +56,30 @@ img {
   width: 200px;
   margin: 5px;
   border: 5px;
-  border-color: blue;
+
   border-style: inset;
 }
 
 footer {
-  background-color: deepskyblue;
-  font-size: medium;
-  color: khaki;
-  grid-area: footer;
-  grid-row: 3;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #0a2850,
+    #10386b,
+    #134987,
+    #155ba4
+  );
+}
+
+footer ul{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  list-style: none;
+  text-decoration: none;
+  font-size: small;
+  font-weight: 300;
+  color: antiquewhite;
 }
 
 @media screen and (max-width: 576px) {
@@ -106,7 +106,7 @@ footer {
   }
 
   footer {
-    grid-area: footer;
+   
   }
 
   footer ul {
