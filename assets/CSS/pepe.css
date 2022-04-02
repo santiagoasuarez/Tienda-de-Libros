@@ -1,24 +1,27 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   background-color: #86bbd8;
-  max-width: auto;
 }
 
-
+h1 {
+  margin-left: 5px;
+  color: whitesmoke;
+}
 
 .navbar {
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   align-items: center;
   max-width: auto;
   height: 10vh;
   justify-content: space-between;
   background-color: #33658a;
+  text-align: center;
 }
 
 .navbar .menu {
@@ -33,34 +36,41 @@ a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-h2 {
-  font-size: large;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #33658a;
-  margin-bottom: 0px;
+.box-modeling {
+  margin: 30px;
 }
 
-.categorias {
+.imagen__uno {
+  height: 350px;
+  width: 350px;
+
+  display: inline-block;
+  transform: scaleX(1.5);
+  padding-left: 40px;
+  padding-bottom: 20;
+}
+
+.imagen__dos {
+  height: 350px;
+  width: 350px;
+  display: inline-block;
+  transform: scaleX(1.5);
+  padding-left: 40px;
+  padding-bottom: 20;
+}
+
+.flex {
   font-size: medium;
+  font-style: italic;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #33658a;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  list-style: none;
-  
-}
-
-img {
-  height: 200px;
-  width: 200px;
-  margin: 5px;
-  border: 5px;
-
-  border-style: inset;
+  text-align: center;
+  line-height: 3;
+  margin-top: 120px;
 }
 
 footer {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: antiquewhite;
   background-image: linear-gradient(
     to right top,
     #051937,
@@ -71,7 +81,7 @@ footer {
   );
 }
 
-footer ul{
+footer ul {
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
@@ -79,18 +89,15 @@ footer ul{
   text-decoration: none;
   font-size: small;
   font-weight: 300;
-  color: antiquewhite;
 }
 
 @media screen and (max-width: 576px) {
   #grilla {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 150px 300px 100px;
+    grid-template-rows: 100px 900px 75px;
     grid-template-areas:
       "header"
-      "section__one"
-      "section__two"
+      "main"
       "footer";
   }
   .section__one,
@@ -99,13 +106,24 @@ footer ul{
     align-items: center;
   }
 
-  .categorias {
-    display: flex;
-    justify-content: space-between;
+  h1 {
+    margin: 5px;
+  }
+
+  img {
+    margin: 20px;
+  }
+
+  p {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  footer {
+    margin: 10px;
     list-style: none;
   }
 
-  
   footer ul {
     display: flex;
     justify-content: space-between;

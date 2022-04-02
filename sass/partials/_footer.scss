@@ -1,0 +1,38 @@
+footer{
+
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: antiquewhite;
+    background-image: linear-gradient(
+      to right top,
+      #051937,
+      #0a2850,
+      #10386b,
+      #134987,
+      #155ba4
+    );
+
+    &__ul {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        list-style: none;
+        text-decoration: none;
+        font-size: small;
+        font-weight: 300;
+      }
+      
+}
+
+@media screen and (max-width: 576px) {
+    footer {
+        margin: 10px;
+        list-style: none;
+      }
+    
+      &__ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 5px;
+      }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "tienda-de-libros",
+  "version": "1.0.0",
+  "description": "Proyecto sobre tienda de libros",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss sass/index.scss assets/css/index.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagoasuarez/Tienda-de-Libros.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santiagoasuarez/Tienda-de-Libros/issues"
+  },
+  "homepage": "https://github.com/santiagoasuarez/Tienda-de-Libros#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
